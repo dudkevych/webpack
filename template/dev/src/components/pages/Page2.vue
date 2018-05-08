@@ -8,7 +8,7 @@
     import {TweenMax} from 'gsap'
 
     export default {
-        name: 'Index',
+        name: 'Page2',
 
     }
 </script>
