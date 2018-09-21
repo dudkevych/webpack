@@ -34,3 +34,18 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### StyleLint usage
+
+``` bash
+# install stylelint package globaly
+npm install stylelint --global
+```
+Enable stylelint plugin and set "Stylelint package" path
+``` bash
+Default Settings -> Languages & Frameworks -> Stylesheets -> Stylelint
+```
+Stylelint config:
+```text
+/dev/.stylelint
+```
