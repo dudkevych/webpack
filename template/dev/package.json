@@ -58,7 +58,12 @@
     "webpack-merge": "^4.1.0",
     "gsap": "^1.19.1",
     "vue-youtube-embed": "^2.1.1",
-    "vue-svg-loader": "^0.1.2"
+    "vue-svg-loader": "^0.1.2",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.0"
   },
   "engines": {
     "node": ">= 4.0.0",
