@@ -1,0 +1,4 @@
+@include font-face('fonts_name', '#{$fonts}/path'/*, 'weight', 'style'*/); // => weight, style default - normal
+
+$default: 'fonts_name', $sans;
+$condesed: 'Open Sans Condensed', $sans;

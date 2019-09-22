@@ -1,0 +1,9 @@
+html:not(.mobile) {
+  // hover effects for desktop components
+  .button {
+    @include transitionProp(color, 1s, $ease);
+    &:hover {
+      @include transitionColor(color, $black, 0.7);
+    }
+  }
+}

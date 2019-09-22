@@ -2,6 +2,40 @@
   @return #{$pixels/$context}em;
 }
 
+@mixin font-face($name, $path, $weight:normal, $style:normal) {
+  @font-face {
+    font: {
+      display: swap;
+      family: $name;
+      weight: $weight;
+      style: $style;
+    }
+    src: url("#{$path}.woff2") format("woff2"),
+    url("#{$path}.woff") format("woff"),
+    url("#{$path}.ttf") format("truetype"),
+    url("#{$path}.eot"),
+    url("#{$path}.eot?iefix") format("embedded-opentype");
+  }
+}
+
+@mixin transitionProp($properties, $time: $transTime, $easing: $ease) {
+
+  transition: {
+    property: $properties;
+    duration: $time;
+    timing-function: $easing;
+  };
+}
+
+@mixin transitionColor($property, $color: $white, $alfa: 0.7) {
+  @if $property == opacity {
+    #{$property}: $alfa;
+  }
+  @else {
+    #{$property}: rgba($color, $alfa);
+  }
+}
+
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}

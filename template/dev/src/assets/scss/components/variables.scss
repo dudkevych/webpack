@@ -6,8 +6,9 @@ $base-font-size: 16;
 
 // Paths
 // -------------------------
-$imgPath:                   '/media/img/';
-$svgPath:                   '/media/img/svg/';
+$imgPath:                   '/static/img';
+$svgPath:                   '/static/img/svg';
+$fonts:                     '/static/fonts';
 
 // Colors
 // -------------------------
@@ -45,10 +46,10 @@ $thin:                      100 !default;
 $light:                     300 !default;
 $regular:                   400 !default;
 $medium:                    500 !default;
-$bold:                      600 !default;
+$bold:                      700 !default;
 $ultraBold:                 800 !default;
 
-$baseLineHeight:            20px !default;
+$baseLineHeight:            em($base-font-size, 20) !default;
 
 $headingsFontWeight:        $bold !default;
 $headingsFontFamily:        inherit !default;
